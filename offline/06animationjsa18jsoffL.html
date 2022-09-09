@@ -1234,7 +1234,23 @@ Ketcindyjsscale=1;
 </script>
 <script id="csdraw" type="text/x-cindyscript">
 Ketinit();
-  pO=[0,0]; Circledata("1",[pO,4],["Color=blue"]); Circledata("2",[pO,3],["Color=green"]); Circledata("3",[pO,2],["Color=yellow"]); Circledata("4",[pO,1],["Color=red"]);  ss=Animationparam(0,2,8*pi); tt=Animationparam(0,4,8*pi); uu=Animationparam(0,6,8*pi); vv=Animationparam(0,8,8*pi);  Arrowdata("1",[[0,0],4*[sin(ss),cos(ss)]],["dr,1",5,"Color=blue"]); Arrowdata("2",[[0,0],3*[sin(tt),cos(tt)]],["dr,2",4,"Color=green"]);
+ 
+pO=[0,0];
+Circledata("1",[pO,4],["Color=blue"]);
+Circledata("2",[pO,3],["Color=green"]);
+Circledata("3",[pO,2],["Color=yellow"]);
+Circledata("4",[pO,1],["Color=red"]);
+ 
+ss=Animationparam(0,2,8*pi);
+tt=Animationparam(0,4,8*pi);
+uu=Animationparam(0,6,8*pi);
+vv=Animationparam(0,8,8*pi);
+ 
+Arrowdata("1",[[0,0],4*[sin(ss),cos(ss)]],["dr,1",5,"Color=blue"]);
+Arrowdata("2",[[0,0],3*[sin(tt),cos(tt)]],["dr,2",4,"Color=green"]);
+Arrowdata("3",[[0,0],2*[sin(uu),cos(uu)]],["dr,3",3,"Color=yellow"]);
+Arrowdata("4",[[0,0],1*[sin(vv),cos(vv)]],["dr,4",2,"Color=red"]);
+ 
 Windispg();
 ;
 
@@ -1262,8 +1278,8 @@ var cdy = CindyJS({
   ports: [{
     id: "CSCanvas",
     width: 793,
-    height: 554,
-    transform: [{visibleRect: [-9.436441031706003, 6.923407468002673, 10.491915128461402, -6.998798474913773]}],
+    height: 574,
+    transform: [{visibleRect: [-9.436441031706003, 6.923407468002673, 10.491915128461402, -7.50140518765444]}],
     axes: true,
     grid: 0.5,
     background: "rgb(247,247,247)"
